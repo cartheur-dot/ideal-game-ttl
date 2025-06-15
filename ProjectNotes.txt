@@ -5,4 +5,5 @@ Ideal game ttl
     2234: Feeling gamed by the distraction of henry at the expense of dot-aeon-ttl, will shed the fiction of dotnet and return to what is real. But since unsure where to go, will start with this "Guess the number" game with the parts I have imagined. Just now finished the set of prints for the user-interface and will mount on another card, not altering what I have already created for dot.
 15.06.2025
     1121: Pushing to prepare the models for printing. Will think on a "set of shared features" for ente evolving array of logic boards.
+    1135: Trying an experiment to print the feature-set that belongs to the project, rather than each individually. Also generate collective stl file.
     
