@@ -8,3 +8,5 @@ Ideal game ttl
     1135: Trying an experiment to print the feature-set that belongs to the project, rather than each individually. Also generate collective stl file.
     1443: Two failed prints due to breaking-away. Maybe the 30% fill. Will print the two chunkers at default 15%.
     1722: Funk-dat, 4-bit switcher is wrongly-sized. Another print needed. Can still drill but not glue-set.
+    1731: Created a two-set print of correct model.
+    
