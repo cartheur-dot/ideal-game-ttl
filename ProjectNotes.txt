@@ -12,4 +12,4 @@ Ideal game ttl
 17.06.2025
     1218: Created a project, starting-in on the UI. Need to figure a way to indicate the postion with only two LEDs.
     1230: Starting with the UI and already seeing the lameness of the AI.
-    
+    1313: Working-through the Address and Data switch-lamp, seeing buses are on the menu today.
