@@ -13,3 +13,5 @@ Ideal game ttl
     1218: Created a project, starting-in on the UI. Need to figure a way to indicate the postion with only two LEDs.
     1230: Starting with the UI and already seeing the lameness of the AI.
     1313: Working-through the Address and Data switch-lamp, seeing buses are on the menu today.
+    1413: Appended the figures to remove the second-set of components since this model is 6-bit addressing and 4-bit data.
+    
