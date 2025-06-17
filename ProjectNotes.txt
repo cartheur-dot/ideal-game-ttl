@@ -9,4 +9,6 @@ Ideal game ttl
     1443: Two failed prints due to breaking-away. Maybe the 30% fill. Will print the two chunkers at default 15%.
     1722: Funk-dat, 4-bit switcher is wrongly-sized. Another print needed. Can still drill but not glue-set.
     1731: Created a two-set print of correct model.
+17.06.2025
+    1218: Created a project, starting-in on the UI. Need to figure a way to indicate the postion with only two LEDs.
     
