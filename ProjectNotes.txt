@@ -19,4 +19,5 @@ Ideal game ttl
     1656: Generated Task03 and this is the end of this phase.
 18.06.2025
     1044: Discussed RAM7400 as a way to get into memories; before that, Heiserman principle of the UI first.
+    1344: Drifting toward soldering.
     
