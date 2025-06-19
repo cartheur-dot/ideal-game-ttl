@@ -26,4 +26,5 @@ Ideal game ttl
     1148: Some minor corrections to the task diagrams and gathering the sockets. Since here, will also gather for RAM7400 since this area can be used for self-programming.
     1312: Sorted RAM7400 but needed an 8-bit port setup for the Arduino tester, which is a great interface to add larger code scenarios.
     1518: Full set of details completed for RAM7400. Ready to prototype the self-programming memory area.
+    1526: Small adjustments made for clarity in documentation.
     
