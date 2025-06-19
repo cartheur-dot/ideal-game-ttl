@@ -23,4 +23,6 @@ Ideal game ttl
     1938: Soldered connections completed. COMM and 5V rails in-place. Leveraged the Vector pins with a bit of round-filing; sets well but dropped a spot of Uhoo to ensure seating over the term of the board's use.
 19.06.2025
     816: Pins are set and ready to continue with the next steps.
+    1148: Some minor corrections to the task diagrams and gathering the sockets. Since here, will also gather for RAM7400 since this area can be used for self-programming.
+    1312: Sorted RAM7400 but needed an 8-bit port setup for the Arduino tester, which is a great interface to add larger code scenarios.
     
