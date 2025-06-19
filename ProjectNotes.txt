@@ -21,4 +21,6 @@ Ideal game ttl
     1044: Discussed RAM7400 as a way to get into memories; before that, Heiserman principle of the UI first.
     1344: Drifting toward soldering.
     1938: Soldered connections completed. COMM and 5V rails in-place. Leveraged the Vector pins with a bit of round-filing; sets well but dropped a spot of Uhoo to ensure seating over the term of the board's use.
+19.06.2025
+    816: Pins are set and ready to continue with the next steps.
     
