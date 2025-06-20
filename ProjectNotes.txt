@@ -32,4 +32,6 @@ Ideal game ttl
     1641: Sockets collected for the ideal-ttl implementation.
 20.06.2025
     828: A day to continue with sockets and chips for RAM7400 dry-run.
+    1038: Would be wise while at the socketing phase to understand the 2114 circuit that, as far as I know, is still not designed.
+    1106: Sockets gathered. Need to add LEDs - short one but could cut a free socket for an unneeded switch.
     
