@@ -30,4 +30,6 @@ Ideal game ttl
     1532: Setting-up the arduino interface.
     1640: User-interface and Arduino board ready for test on Windoze.
     1641: Sockets collected for the ideal-ttl implementation.
+20.06.2025
+    828: A day to continue with sockets and chips for RAM7400 dry-run.
     
