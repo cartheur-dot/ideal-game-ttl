@@ -39,4 +39,8 @@ Ideal game ttl
     1259: Gathered the part for the ideal aspect and listed the UI parts. Would like to begin assembly with the RAM7400 as soon as I can find a 2024 order of 2.2k bussed Bornes block resistors. Later.
     1618: Still have not found the bussers; settled on working on the UI and sized the third lamp for the success indication in the 74LS85 game.
     1811: Bussed located and set the full socket requirements for the system.
-    
+    1932: With a common ground the resistor network (bussed) is used; with a common positive the Heiserman method or isolated network is used. I suspect the following: 1. Bussed can be used on 74ls93 counter indicator, 2. Isolated on switch-LED indicator combo, 3. Bussed on pullups.
+    1957: Pull parts then done for the day.
+    2032: Cleaned-up the text in preparation of the build.
+     
+
