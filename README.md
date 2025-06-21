@@ -136,6 +136,7 @@ The game remains "Guess the Hidden Number," with the counter tracking guesses to
 | **LM555**        | 1        | 555 Timer IC for 1 kHz clock               |
 | **74LS73**       | 1        | Dual JK flip-flop for debouncing           |
 | **74LS00**       | 1        | Quad 2-input NAND gate for control logic   |
+| **74LS00**       | 8        | Quad 2-input NAND gate for control logic (RAM)   |
 | **74LS244**      | 1        | Octal buffer/line driver for output LEDs   |
 | **74LS85**       | 1        | 4-bit magnitude comparator for game logic   |
 | **74LS93**       | 1        | 4-bit binary counter for guess tracking     |
