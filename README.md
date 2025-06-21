@@ -146,7 +146,7 @@ The game remains "Guess the Hidden Number," with the counter tracking guesses to
 | **Capacitor**    | 7        | 1 for 555 timer (0.1 µF), 6 for decoupling (0.1 µF near each IC) |
 | **Power Supply** | 1        | 5V DC regulated supply                     |
 
-**Total ICs (#pins)**: 2114 (18), LM555 (8), 74LS73 (14), 74LS00 (14), 74LS244 (20), 74LS85 (16), 74LS93(14); 7404 (14), 74LS367 (16), 8226 (16).
+**Total ICs (#pins)**: 2114 (18), LM555 (8), 74LS73 (14), 74LS00 (14), 74LS244 (20), 74LS85 (16), 74LS93(14); 7404 (14), 74LS367 (16), 8226 (16); 500-ohm-sip (14), 1k-ohm sip (18), 0.1uF (8).
 
 ## Notes
 - **IC Count**: 74LS93 adds 1 IC, the simplest 4-bit counter. Cascading flip-flops (e.g., 74LS73) would require more ICs.
