@@ -35,7 +35,7 @@ The counter integrates with the existing circuit by using the LOAD pulse (from 7
   - **Reset**:
     - Connect R0(1) and R0(2) (pins 2, 3) to 74LS85 O_A=B (pin 5) via a 74LS00 NAND gate for reset on correct guess.
     - Example: Use a 74LS00 NAND gate (pins 1, 2 input, pin 3 output) with O_A=B and delayed LOAD pulse (via RC or second 74LS73 flip-flop) as inputs.
-  - **Outputs**: Connect QA–QD (pins 12, 9, 8, 11) to 4 LEDs (L12–L15) via 330 Ω resistors:
+  - **Outputs**: Connect QA–QD (pins 12, 9, 8, 11) to 4 LEDs (L12–L15) via 550Ω bussed resistor network (1kΩ):
     - L12: QA (bit 0, LSB).
     - L13: QB (bit 1).
     - L14: QC (bit 2).
@@ -45,15 +45,15 @@ The counter integrates with the existing circuit by using the LOAD pulse (from 7
 
 ### 2. Reset Logic
 - **Automatic Reset**:
-  - Reset 74LS93 when 74LS85 O_A=B = 1 (correct guess).
-  - Use a 74LS00 NAND gate to combine O_A=B with LOAD pulse (74LS73 Q):
-    - Inputs: O_A=B (74LS85 pin 5), Q (74LS73 pin 5).
+  - Reset 74LS93 when 74LS85 `O_A=B` = 1 (correct guess).
+  - Use a 74LS00 NAND gate to combine `O_A=B` with LOAD pulse (74LS73 Q):
+    - Inputs: `O_A=B` (74LS85 pin 5), Q (74LS73 pin 5).
     - Output: To R0(1) and R0(2) (74LS93 pins 2, 3).
     - Resets counter only on correct guess with LOAD.
-- **Manual Reset** (optional):
+- **Manual Reset** :
   - Add SPST push-button (S15) for manual reset (new game without correct guess).
   - Connect S15 between VCC and R0(1)/R0(2) with 10 kΩ pull-down resistors to GND.
-  - When pressed, S15 sets R0(1) = R0(2) = 1, resetting to 0000.
+  - When pressed, S15 sets R0(1) = R0(2) = 1, resetting to `0000`.
 
 ### 3. Control Integration
 - **LOAD Pulse**: 74LS73 Q (pin 5) triggers:
@@ -65,11 +65,11 @@ The counter integrates with the existing circuit by using the LOAD pulse (from 7
   - 74LS93’s ~20 ns ripple delay is negligible for 1 ms clock period.
 - **74LS00 Usage**:
   - Uses two NAND gates for \(\overline{\text{CS}}\) and \(\overline{\text{WE}}\) (original circuit).
-  - Third gate for counter reset (O_A=B and LOAD).
-  - Fourth gate for manual reset (if S15 used) or unused.
+  - Third gate for counter reset (`O_A=B` and `LOAD`).
+  - Fourth gate for manual reset (S15).
 
 ### 4. Display
-- **4 LEDs (L12–L15)**: Show guess count in binary (e.g., 0011 = 3 guesses).
+- **4 LEDs (L12–L15)**: Show guess count in binary (e.g., `0011` = 3 guesses).
 - **Interpretation**: Players read binary (assume familiarity, common in digital logic contexts). Provide a reference chart (e.g., 0001 = 1, 0010 = 2).
 - **Optional 7-Segment Display**:
   - A 74LS47 BCD-to-7-segment decoder and display add 1 IC and complexity. Binary LEDs minimize components.
@@ -78,33 +78,33 @@ The counter integrates with the existing circuit by using the LOAD pulse (from 7
 The game remains "Guess the Hidden Number," with the counter tracking guesses to enhance the RL analogy (minimize guesses = maximize reward).
 
 1. **Setup**:
-   - Store a 4-bit number (0–15) in 2114 RAM at address 00000000 (write mode, S13 = 0, LOAD).
-   - Set address switches (S1–S8) to 00000000, read/write switch (S13) to read (1).
-   - Reset counter (via S15 or power-on, 74LS93 outputs 0000).
+   - Store a 4-bit number in 2114 RAM at address `000000`, `PROGRAM`, lamps indicate data switch values; S13 = 0, `LOAD`.
+   - Set address switches (S1–S6) to `000000`, R/P switch (S13) to `READ` (1), lamps indicate state from RAM.
+   - Reset counter via S15 or power-on, 74LS93 outputs `0000`.
 
 2. **Gameplay**:
    - **Step 1: Input Guess**:
-     - Set data switches (S9–S12) to a 4-bit guess (e.g., 1000 = 8).
+     - Set data switches (S9–S12) to a 4-bit guess (e.g., `1000` = `8`).
      - Input LEDs (L1–L4) show the guess.
    - **Step 2: Submit Guess**:
      - Press LOAD (S14). 74LS73 pulse triggers:
        - 2114 RAM read (outputs stored number to 74LS85).
        - 74LS85 comparison (guess vs. stored number).
-       - 74LS93 increment (e.g., 0000 → 0001).
+       - 74LS93 increment (e.g., `0000` → `0001`).
      - Feedback LEDs (L9–L11):
-       - Red (L9): Too high (O_A>B).
-       - Yellow (L10): Too low (O_A<B).
-       - Green (L11): Correct (O_A=B).
-     - Counter LEDs (L12–L15) show count (e.g., 0001 = 1 guess).
+       - Red (L9): Too high `O_A>B`.
+       - Yellow (L10): Too low `O_A<B`.
+       - Green (L11): Correct `O_A=B`.
+     - Counter LEDs (L12–L15) show count (e.g., `0001` = 1 guess).
    - **Step 3: Adjust Guess**:
-     - Adjust switches based on feedback (e.g., if 8 is too low, try 1100 = 12).
+     - Adjust switches based on feedback (e.g., if 8 is too low, try `1100` = `12`).
    - **Step 4: Repeat**:
      - Repeat until green LED (L11) lights.
-     - On correct guess, O_A=B = 1 resets 74LS93 to 0000.
+     - On correct guess, `O_A=B` = 1 resets 74LS93 to `0000`.
 
 3. **Winning**:
    - Win when green LED (L11) lights.
-   - Note final guess count on L12–L15 before reset (e.g., 0011 = 3 guesses).
+   - Note final guess count on L12–L15 before reset (e.g., `0011` = 3 guesses).
    - Optionally, enable 74LS244 to show stored number on L5–L8.
 
 4. **New Game**:
@@ -132,18 +132,18 @@ The game remains "Guess the Hidden Number," with the counter tracking guesses to
 ## Updated Bill of Materials (BoM)
 | Component         | Quantity | Description                                      |
 |-------------------|----------|---------------------------------------------|
-| **2114**         | 1        | 1K x 4-bit static RAM IC                   |
+| **2114**         | 1        | 1024 x 4-bit static RAM IC                   |
 | **LM555**        | 1        | 555 Timer IC for 1 kHz clock               |
 | **74LS73**       | 1        | Dual JK flip-flop for debouncing           |
 | **74LS00**       | 1        | Quad 2-input NAND gate for control logic   |
-| **74LS00**       | 8        | Quad 2-input NAND gate for control logic (RAM)   |
+| **74LS00**       | 8        | Quad 2-input NAND gate for control logic (RAM7400)   |
 | **74LS244**      | 1        | Octal buffer/line driver for output LEDs   |
 | **74LS85**       | 1        | 4-bit magnitude comparator for game logic   |
 | **74LS93**       | 1        | 4-bit binary counter for guess tracking     |
-| **SPST Switch**  | 13       | 8 for address (S1–S8), 4 for data (S9–S12), 1 for read/write (S13) |
-| **SPST Push-Button** | 2    | LOAD button (S14), Reset button (S15, optional) |
-| **LED**          | 15       | 4 for input (L1–L4), 4 for output (L5–L8), 3 for feedback (L9: red, L10: yellow, L11: green), 4 for counter (L12–L15) |
-| **Resistor**     | 32       | 14 pull-up (10 kΩ), 14 pull-down (10 kΩ) for switches; 15 current-limiting (330 Ω) for LEDs |
+| **SPST Switch**  | 11       | 6 for address (S1–S6), 4 for data (S9–S12), 1 for read/write (S13) |
+| **SPST Push-Button** | 2    | LOAD button (S14), Reset button (S15) |
+| **LED**          | 15       | 6 for address (S1–S6), 4 for input/output (L1-L4/L5–L8), 3 for feedback (L9: red, L10: yellow, L11: green), 4 for counter (L12–L15) |
+| **Resistor**     | 32       | 14 pull-up (4.7 kΩ), 14 pull-down (22 kΩ) for switches; 5 current-limiting resistor networks (550 Ω) for LEDs |
 | **Capacitor**    | 7        | 1 for 555 timer (0.1 µF), 6 for decoupling (0.1 µF near each IC) |
 | **Power Supply** | 1        | 5V DC regulated supply                     |
 
