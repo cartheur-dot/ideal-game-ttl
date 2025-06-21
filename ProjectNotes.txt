@@ -37,4 +37,6 @@ Ideal game ttl
 21.06.2025
     1151: Happy Solstice! Reviewing TTL and ideal pullup values and have computed power ideal with a 4.7k resistor, using the DIP or inline types and not the silly single resistors in the Heiserman way - although in isolated form in a 16-pin DIP, this is approximately the same!
     1259: Gathered the part for the ideal aspect and listed the UI parts. Would like to begin assembly with the RAM7400 as soon as I can find a 2024 order of 2.2k bussed Bornes block resistors. Later.
+    1618: Still have not found the bussers; settled on working on the UI and sized the third lamp for the success indication in the 74LS85 game.
+    1811: Bussed located and set the full socket requirements for the system.
     
