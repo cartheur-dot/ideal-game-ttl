@@ -36,4 +36,5 @@ Ideal game ttl
     1106: Sockets gathered. Need to add LEDs - short one but could cut a free socket for an unneeded switch.
 21.06.2025
     1151: Happy Solstice! Reviewing TTL and ideal pullup values and have computed power ideal with a 4.7k resistor, using the DIP or inline types and not the silly single resistors in the Heiserman way - although in isolated form in a 16-pin DIP, this is approximately the same!
+    1259: Gathered the part for the ideal aspect and listed the UI parts. Would like to begin assembly with the RAM7400 as soon as I can find a 2024 order of 2.2k bussed Bornes block resistors. Later.
     
