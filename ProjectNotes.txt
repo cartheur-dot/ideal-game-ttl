@@ -42,5 +42,7 @@ Ideal game ttl
     1932: With a common ground the resistor network (bussed) is used; with a common positive the Heiserman method or isolated network is used. I suspect the following: 1. Bussed can be used on 74ls93 counter indicator, 2. Isolated on switch-LED indicator combo, 3. Bussed on pullups.
     1957: Pull parts then done for the day.
     2032: Cleaned-up the text in preparation of the build.
-     
+22.06.2025
+    959: Cleared an area for digital analysis but decided against a heavy solution at the moment. Next step is to build the UI.
+    
 
