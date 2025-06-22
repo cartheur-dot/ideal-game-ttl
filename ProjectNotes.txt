@@ -44,5 +44,6 @@ Ideal game ttl
     2032: Cleaned-up the text in preparation of the build.
 22.06.2025
     959: Cleared an area for digital analysis but decided against a heavy solution at the moment. Next step is to build the UI.
+    1003: Regarding the UI: Looking at the diagram and reading about the idea of pullup resistors, PR207 and PR208 are performing this task.
     
 
