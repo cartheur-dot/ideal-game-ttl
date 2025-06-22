@@ -74,6 +74,28 @@ The counter integrates with the existing circuit by using the LOAD pulse (from 7
 - **Optional 7-Segment Display**:
   - A 74LS47 BCD-to-7-segment decoder and display add 1 IC and complexity. Binary LEDs minimize components.
 
+### 5. 75LS85 Connections
+
+```
+74LS85 (16-pin DIP)
+  Pin 5 (O_A>B) ---[330Ω]--- L9 (Red LED) --- GND
+  Pin 7 (O_A<B) ---[330Ω]--- L10 (Yellow LED) --- GND
+  Pin 6 (O_A=B) ---[330Ω]--- L11 (Green LED) --- GND
+  Pin 2 (A0) ---- S9 (D0 switch)
+  Pin 3 (A1) ---- S10 (D1 switch)
+  Pin 4 (A2) ---- S11 (D2 switch)
+  Pin 5 (A3) ---- S12 (D3 switch)
+  Pin 15 (B0) --- 2114 I/O1 (pin 11)
+  Pin 14 (B1) --- 2114 I/O2 (pin 12)
+  Pin 13 (B2) --- 2114 I/O3 (pin 13)
+  Pin 12 (B3) --- 2114 I/O4 (pin 14)
+  Pin 10 (I_A>B) --- GND
+  Pin 11 (I_A<B) --- GND
+  Pin 9  (I_A=B) --- VCC
+  Pin 16 (VCC) --- 5V + [0.1µF capacitor] --- GND
+  Pin 8  (GND) --- GND
+  ```
+
 ## Updated Gameplay
 The game remains "Guess the Hidden Number," with the counter tracking guesses to enhance the RL analogy (minimize guesses = maximize reward).
 
