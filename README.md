@@ -43,6 +43,22 @@ The counter integrates with the existing circuit by using the LOAD pulse (from 7
     - LED cathodes to GND.
   - **Decoupling**: Add 0.1 µF capacitor near pin 5 (VCC).
 
+  _Connections_
+  ```
+  74LS93 (14-pin DIP)
+  Pin 14 (CKA) --- 74LS73 Q (pin 5, LOAD pulse)
+  Pin 1  (CKB) --- Pin 12 (QA)
+  Pin 12 (QA) ---[330Ω]--- L12 (LED) --- GND
+  Pin 9  (QB) ---[330Ω]--- L13 (LED) --- GND
+  Pin 8  (QC) ---[330Ω]--- L14 (LED) --- GND
+  Pin 11 (QD) ---[330Ω]--- L15 (LED) --- GND
+  Pin 2  (R0(1)) --- 74LS00 NAND output (O_A=B & LOAD) or S15 (VCC w/ 10kΩ pull-down)
+  Pin 3  (R0(2)) --- Same as R0(1)
+  Pin 5  (VCC) --- 5V + [0.1µF capacitor] --- GND
+  Pin 10 (GND) --- GND
+  Pins 4, 6, 7, 13 (NC) --- Unconnected
+  ```
+
 ### 2. Reset Logic
 - **Automatic Reset**:
   - Reset 74LS93 when 74LS85 `O_A=B` = 1 (correct guess).
