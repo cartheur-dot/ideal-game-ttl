@@ -51,4 +51,5 @@ Ideal game ttl
     1200: Parts are lain-out. Using the deep-cushion to mount the resistors into the 24-pin WW: SwitchRs to the left; LedRs to the right. Addresses first. Data second.
     1258: Resistors mounted, including the three RL lamps for the 7485. LEDs chosen.
     1306: Looking at the connections as the LEDs for the 7485 and the 7493 have their anodes to the respective output pins, cathode on ground.
+    1401: For completeness, documented the circuit and its BoM, sans Heiserman parts.
     
