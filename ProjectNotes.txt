@@ -49,4 +49,6 @@ Ideal game ttl
     1015: Looking at the resistor blocks (10) first as one end is connected to the 5V supply.
     1048: UI diodes: Red --> 604R; Blue --> 2.43k.
     1200: Parts are lain-out. Using the deep-cushion to mount the resistors into the 24-pin WW: SwitchRs to the left; LedRs to the right. Addresses first. Data second.
+    1258: Resistors mounted, including the three RL lamps for the 7485. LEDs chosen.
+    1306: Looking at the connections as the LEDs for the 7485 and the 7493 have their anodes to the respective output pins, cathode on ground.
     
