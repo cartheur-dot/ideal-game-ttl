@@ -43,7 +43,7 @@ Ideal game ttl
     1957: Pull parts then done for the day.
     2032: Cleaned-up the text in preparation of the build.
 22.06.2025
-    959: Cleared an area for digital analysis but decided against a heavy solution at the moment. Next step is to build the UI.
+    959: Cleared an area for digital analysis but decided against a heavy solution at the moment. Next step is to build the UI. Then, I think, the RAM7400 board to get the sense of how the logic appears.
     1003: Regarding the UI: Looking at the diagram and reading about the idea of pullup resistors, PR207 and PR208 are performing this task.
+    1009: Will remove the sockets and only keep ones for the UI: 7404, 74367, 8226.
     
-
