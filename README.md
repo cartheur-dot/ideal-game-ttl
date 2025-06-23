@@ -4,21 +4,21 @@ Playing around is more than half of the fun.
 
 # Adding a Guess Counter to the "Guess the Hidden Number" Game
 
-To enhance the "Guess the Hidden Number" game with a **guess counter** that tracks the number of guesses (LOAD button presses) a player makes, we’ll add logic to the existing circuit (2114 RAM, LM555, 74LS73, 74LS00, 74LS244, 74LS85, SPST switches, LEDs). The counter displays the number of guesses on LEDs and resets upon a correct guess or manual reset. The goal is to minimize additional ICs while reinforcing the reinforcement learning (RL) analogy.
+To enhance the "Guess the Hidden Number" game with a **guess counter** that tracks the number of guesses (LOAD button presses) a player makes, we’ll add logic to the existing circuit (2114 RAM, 8226, LM555, 74LS73, 74LS00, 74LS244, 74LS85, SPST switches, LEDs). The counter displays the number of guesses on LEDs and resets upon a correct guess or manual reset. The goal is to minimize additional ICs while reinforcing the reinforcement learning (RL) analogy.
 
 ## Counter Design Overview
 - **Purpose**: Count LOAD button presses (guesses), display the count, and reset when the player wins (correct guess) or starts a new game.
 - **Display**: Use a 4-bit binary counter (0–15 guesses) with 4 LEDs to keep the design simple, avoiding complex 7-segment display drivers.
 - **Logic**:
   - Increment the counter each time the LOAD button is pressed (using the same pulse as RAM read and 74LS85 comparison).
-  - Reset when the 74LS85 indicates a correct guess (O_A=B = 1) or via an optional manual reset switch.
+  - Reset when the 74LS85 indicates a correct guess (`O_A=B` = 1) or via an optional manual reset switch.
 - **Components**:
   - **74LS93** (4-bit binary counter) for counting.
   - 4 LEDs for binary display.
   - Reuse existing 74LS73 and 74LS00 for control signals.
 
 ## Circuit Modifications
-The counter integrates with the existing circuit by using the LOAD pulse (from 74LS73) to increment and the 74LS85’s O_A=B output to reset. Here’s the implementation:
+The counter integrates with the existing circuit by using the LOAD pulse (from 74LS73) to increment and the 74LS85’s `O_A=B` output to reset. Here’s the implementation:
 
 ### 1. Counter IC: 74LS93 (4-bit Binary Counter)
 - **Description**: The 74LS93 is a 4-bit ripple counter with a divide-by-2 (QA) and divide-by-8 (QB–QD) section, counting from 0000 to 1111 (0–15), sufficient for tracking guesses (typically ≤4 with binary search).
@@ -30,11 +30,11 @@ The counter integrates with the existing circuit by using the LOAD pulse (from 7
   - **VCC (pin 5)**: 5V.
   - **GND (pin 10)**: Ground.
 - **Connections**:
-  - **Clock**: Connect CKA (pin 14) to 74LS73 Q output (pin 5, LOAD pulse for \(\overline{\text{CS}}\) and \(\overline{\text{WE}}\)). Q’s falling edge (after LOAD release) triggers the counter.
+  - **Clock**: Connect CKA (pin 14) to 74LS73 Q output (pin 5, `LOAD` pulse for `CS` and `WE`). Q’s falling edge (after `LOAD` release) triggers the counter.
   - **CKB**: Connect to QA (pin 12) for 4-bit counting.
   - **Reset**:
-    - Connect R0(1) and R0(2) (pins 2, 3) to 74LS85 O_A=B (pin 5) via a 74LS00 NAND gate for reset on correct guess.
-    - Example: Use a 74LS00 NAND gate (pins 1, 2 input, pin 3 output) with O_A=B and delayed LOAD pulse (via RC or second 74LS73 flip-flop) as inputs.
+    - Connect R0(1) and R0(2) (pins 2, 3) to 74LS85 `O_A=B` (pin 5) via a 74LS00 NAND gate for reset on correct guess.
+    - Example: Use a 74LS00 NAND gate (pins 1, 2 input, pin 3 output) with `O_A=B` and delayed LOAD pulse (via RC or second 74LS73 flip-flop) as inputs.
   - **Outputs**: Connect QA–QD (pins 12, 9, 8, 11) to 4 LEDs (L12–L15) via 550Ω bussed resistor network (1kΩ):
     - L12: QA (bit 0, LSB).
     - L13: QB (bit 1).
@@ -52,7 +52,7 @@ The counter integrates with the existing circuit by using the LOAD pulse (from 7
   Pin 9  (QB) ---[330Ω]--- L13 (LED) --- GND
   Pin 8  (QC) ---[330Ω]--- L14 (LED) --- GND
   Pin 11 (QD) ---[330Ω]--- L15 (LED) --- GND
-  Pin 2  (R0(1)) --- 74LS00 NAND output (O_A=B & LOAD) or S15 (VCC w/ 10kΩ pull-down)
+  Pin 2  (R0(1)) --- 74LS00 NAND output (`O_A=B` & `LOAD`) or S15 (`VCC` w/ 10kΩ pull-down)
   Pin 3  (R0(2)) --- Same as R0(1)
   Pin 5  (VCC) --- 5V + [0.1µF capacitor] --- GND
   Pin 10 (GND) --- GND
@@ -171,6 +171,7 @@ The game remains "Guess the Hidden Number," with the counter tracking guesses to
 | Component         | Quantity | Description                                      |
 |-------------------|----------|---------------------------------------------|
 | **2114**         | 1        | 1024 x 4-bit static RAM IC                   |
+| **i8226**        | 1        | 4-bit bus driver for data bus (16-pin DIP)   |
 | **LM555**        | 1        | 555 Timer IC for 1 kHz clock               |
 | **74LS73**       | 1        | Dual JK flip-flop for debouncing           |
 | **74LS00**       | 1        | Quad 2-input NAND gate for control logic   |
