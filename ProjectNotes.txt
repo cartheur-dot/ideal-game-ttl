@@ -56,4 +56,6 @@ Ideal game ttl
     1437: Fully shifted.
 23.06.2025
     2014: Still shifted. I notice that if I work through the weekend, Mondays are free.
-
+    2021: I have contemplated the 7485 and can square the output behaviour. The only gap is from the 8226 to 2114.
+    2057: Just closed the gap and updated the document.
+    
