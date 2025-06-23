@@ -54,3 +54,6 @@ Ideal game ttl
     1401: For completeness, documented the circuit and its BoM, sans Heiserman parts.
     1403: Feeling a bit frazzled so shifting away.
     1437: Fully shifted.
+23.06.2025
+    2014: Still shifted.
+    
