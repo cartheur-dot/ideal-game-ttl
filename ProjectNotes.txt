@@ -64,4 +64,7 @@ Ideal game ttl
     1005: This should be a companion to aeon-ttl, as this is the prequel, the bear the product target, compact fraemwork the development environment and the output concentrated on animals-dot.
     1159: Note that this work is across three repos: This one, aeon-ttl, and animals-dot.
     1200: Finished the correction to EVB so have some free time after lunch to work on this.
+    1410: Not so much free time.
+    1429: 5V line to all the switch resistors, starting.
+    1505: Finished the task.
     
