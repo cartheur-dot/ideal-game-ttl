@@ -67,4 +67,5 @@ Ideal game ttl
     1410: Not so much free time.
     1429: 5V line to all the switch resistors, starting.
     1505: Finished the task.
+    1607: Stepping into the EVB meeting.
     
