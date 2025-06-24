@@ -61,4 +61,5 @@ Ideal game ttl
     2110: Added the datasheet for this part.
 24.06.2025
     1003: On the EVB today.
+    1005: This should be a companion to aeon-ttl, as this is the prequel, the bear the product target, compact fraemwork the development environment and the output concentrated on animals-dot.
     
