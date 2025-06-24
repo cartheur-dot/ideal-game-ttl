@@ -68,4 +68,5 @@ Ideal game ttl
     1429: 5V line to all the switch resistors, starting.
     1505: Finished the task.
     1607: Stepping into the EVB meeting.
+    1846: Stepping out of the EVB meeting. Level shifters too smart for their own good.
     
