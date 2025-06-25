@@ -69,4 +69,7 @@ Ideal game ttl
     1505: Finished the task.
     1607: Stepping into the EVB meeting.
     1846: Stepping out of the EVB meeting. Level shifters too smart for their own good.
-    
+25.06.2025
+    1235: Snapping/soldering pins and WW the equivalent of U13.
+    1310: Job is finished.
+
