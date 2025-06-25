@@ -83,4 +83,5 @@ Ideal game ttl
         * DL to resistor block, (solder-task)
     1340: Starting-in.
     1436: All address internal WW has been completed.
-    
+    1605: Going into a meeting.
+    2055: Meeting finished.
