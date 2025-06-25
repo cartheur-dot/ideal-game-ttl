@@ -73,12 +73,14 @@ Ideal game ttl
     1235: Snapping/soldering pins and WW the equivalent of U13.
     1310: Job is finished.
     1325: Thinking of the order for ideal-ttl, since the iron is here: AS0/DS0 is the extreme right (LSB).
-        * Interwires between 7404 and 74367,
-        * AS resistor block to 04-367 (@7404),
-        * AL resistor block to 7404,
-        * DS resistor block to 8226,
+        * Interwires between 7404 and 74367, (yellow)
+        * 5V (red) and COMM (black) - internal only
+        * AS resistor block to 04-367 (@7404), (AS0 to the inside)
+        * AL resistor block to 7404, (AL0 to the inside)
+        * DS resistor block to 8226, STOP
         * DL resistor block to 8226,
         * AL to resistor block, (solder-task)
         * DL to resistor block, (solder-task)
     1340: Starting-in.
+    1436: All address internal WW has been completed.
     
