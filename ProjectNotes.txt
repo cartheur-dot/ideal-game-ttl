@@ -74,13 +74,16 @@ Ideal game ttl
     1310: Job is finished.
     1325: Thinking of the order for ideal-ttl, since the iron is here: AS0/DS0 is the extreme right (LSB).
         * Interwires between 7404 and 74367, (yellow)
-        * 5V (red) and COMM (black) - internal only
-        * AS resistor block to 04-367 (@7404), (AS0 to the inside)
+        * Addr - 5V (red) and COMM (black) - internal only
+        * AS resistor block to 74367, (AS0 to the inside)
         * AL resistor block to 7404, (AL0 to the inside)
-        * DS resistor block to 8226, STOP
-        * DL resistor block to 8226,
         * AL to resistor block, (solder-task)
+        * AS to 7404, (solder-task)
+        * Data - 5V (red) and COMM (black)
+        * DS resistor block to 8226, (DS0 to the inside)
+        * DL resistor block to 8226, (DL0 to the inside)
         * DL to resistor block, (solder-task)
+        * DS to 8226, (solder-task)
     1340: Starting-in.
     1436: All address internal WW has been completed.
     1605: Going into a meeting.
@@ -93,4 +96,5 @@ Ideal game ttl
     1254: AL to resistor block is done.
     1319: AS to 7404 is done.
     1320: Hot today. Short break. Remember to proof in another session, just before live test.
+    1424: Completed the list of tasks and DS and DL the final part.
     
