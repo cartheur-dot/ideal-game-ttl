@@ -98,4 +98,5 @@ Ideal game ttl
     1320: Hot today. Short break. Remember to proof in another session, just before live test.
     1424: Completed the list of tasks and DS and DL the final part.
     1511; Complete. Had to replace DS2 because of cheap connectors to plastic rather than metal. Need to keep at the Mountain - or at the minimum find a viable vista.
+    1514: Looking at the data diagram and the board: What remains open are RESET, R/P, and LOAD.
     
