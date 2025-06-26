@@ -90,4 +90,7 @@ Ideal game ttl
     1142: For AS and AL, connections from each respective part to the circuit will complete.
     1150: AL0 wire mounted and ready for solder. Lunch break.
     1232: Back. Soldering iron is ready: Begin.
+    1254: AL to resistor block is done.
+    1319: AS to 7404 is done.
+    1320: Hot today. Short break. Remember to proof in another session, just before live test.
     
