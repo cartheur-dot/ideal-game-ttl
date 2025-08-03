@@ -100,4 +100,6 @@ Ideal game ttl
     1511; Complete. Had to replace DS2 because of cheap connectors to plastic rather than metal. Need to keep at the Mountain - or at the minimum find a viable vista.
     1514: Looking at the data diagram and the board: What remains open are RESET, R/P, and LOAD.
     1550: Tried measuring the speaker and got a (very) rough metric. Closed the UI story as this is done.
+03.08.2025
+    1105: Due to machinations, this project is active.
     
