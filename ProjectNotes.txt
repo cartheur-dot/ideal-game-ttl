@@ -102,4 +102,5 @@ Ideal game ttl
     1550: Tried measuring the speaker and got a (very) rough metric. Closed the UI story as this is done.
 03.08.2025
     1105: Due to machinations, this project is active.
+    1310: To get warmed-up, will resume RAM7400.
     
