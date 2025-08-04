@@ -2,6 +2,11 @@
 
 Playing around is more than half of the fun.
 
+### References
+
+* RAM[7400](https://github.com/emotional-toys/RAM7400)
+* aeon-[ttl](https://github.com/emotional-toys/aeon-ttl)
+
 # Adding a Guess Counter to the "Guess the Hidden Number" Game
 
 To enhance the "Guess the Hidden Number" game with a **guess counter** that tracks the number of guesses (LOAD button presses) a player makes, we’ll add logic to the existing circuit (2114 RAM, 8226, LM555, 74LS73, 74LS00, 74LS244, 74LS85, SPST switches, LEDs). The counter displays the number of guesses on LEDs and resets upon a correct guess or manual reset. The goal is to minimize additional ICs while reinforcing the reinforcement learning (RL) analogy.
