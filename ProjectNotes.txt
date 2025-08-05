@@ -108,4 +108,5 @@ Ideal game ttl
     1407: Purvey things done for today.
     1434: Well, not really. Done now!
     1509: Still not really. But think so now.
+    1702: Not really at all. Oxygen removed from the process.
     
