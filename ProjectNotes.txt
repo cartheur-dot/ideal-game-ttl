@@ -103,4 +103,6 @@ Ideal game ttl
 03.08.2025
     1105: Due to machinations, this project is active.
     1310: To get warmed-up, will resume RAM7400.
+05.08.2025
+    1138: RAM7400 fully assembled and ready for testing. Do not want to start the validation step until construction is completed here.
     
