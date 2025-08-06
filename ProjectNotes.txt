@@ -112,4 +112,5 @@ Ideal game ttl
 06.08.2025
     1030: Resuming where I left-off.
     1104: Work begins.
+    1246: Found an error on the 8226 chip.
     
