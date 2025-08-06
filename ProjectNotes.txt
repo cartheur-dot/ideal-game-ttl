@@ -113,4 +113,5 @@ Ideal game ttl
     1030: Resuming where I left-off.
     1104: Work begins.
     1246: Found an error on the 8226 chip.
+    1304: Next is to delve into Task 3.
     
