@@ -116,4 +116,6 @@ Ideal game ttl
     1304: Next is to delve into Task 3.
     1308: 74LS93 and 74LS85 will need to be sorted subsequent to 2114. But no LEDs to show readout! Reuse is the obvious answer, the blue datalights. Needs planning after sorting the last task- e.g., need to devise new sets of tasks.
     1722: Will only work until the insertion of 2114 and work-backward to the necessary switch indicators for RAM direction - read-write.
+07.08.2025
+    1044: Focused to get task three completed today.
     
