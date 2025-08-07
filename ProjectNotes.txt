@@ -120,4 +120,5 @@ Ideal game ttl
     1044: Focused to get task three completed today.
     1152: Again on the distraction. Now gathering the parts for task three.
     1202: Note to return to rodney image 0701 for test description.
+    1204: First part of the task is to connect A0-A5 and D0-D3; second is to address R/P and LOAD.
     
