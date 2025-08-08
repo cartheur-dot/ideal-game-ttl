@@ -6,6 +6,7 @@ Playing around is more than half of the fun.
 
 * RAM[7400](https://github.com/emotional-toys/RAM7400)
 * aeon-[ttl](https://github.com/emotional-toys/aeon-ttl)
+* [SRAM](https://www.jameco.com/c/SRAM-Memory.html)
 
 # Adding a Guess Counter to the "Guess the Hidden Number" Game
 
