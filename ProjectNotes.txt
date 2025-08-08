@@ -128,4 +128,5 @@ Ideal game ttl
     1150: Grabbed some more datasheets as the item has reappeared in the Jameco webshop.
     1225: Need to reveal some blocked parts on task02b to get the sense of how Active-Low CS and WE (2114), DIEN and CS (8216/8226) are being used. Also, do I want inverting (8226) or non-inverting (8216), given the I/O circuitry where this chip contributes is non-existant.
     1228: Well, all I will findout is that they go somewhere else. Basically: Signals are high unless pulled low, which enables these functions. Perhaps a good idea is to start testing what is onboard to get a feel of how it behaves.
+    1232: Well, again, table 5.4 shows where the LOAD button is integrated, which it is currently not.
     
