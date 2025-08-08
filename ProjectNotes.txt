@@ -125,4 +125,5 @@ Ideal game ttl
     1311: Address and data bus connected to the 2114 socket.
 08.08.2025
     1109: Next task is to sort the two switches and pushbutton...and as well to enjoy today's spirit.
+    1150: Grabbed some more datasheets as the item has reappeared in the Jameco webshop.
     
