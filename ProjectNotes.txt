@@ -123,4 +123,6 @@ Ideal game ttl
     1204: First part of the task is to connect A0-A5 and D0-D3; second is to address R/P and LOAD.
     1230: Missing power line to address chips set; power and ground to 2114-18 complete.
     1311: Address and data bus connected to the 2114 socket.
+08.08.2025
+    1109: Next task is to sort the two switches and pushbutton...and as well to enjoy today's spirit.
     
