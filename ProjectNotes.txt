@@ -130,4 +130,5 @@ Ideal game ttl
     1228: Well, all I will findout is that they go somewhere else. Basically: Signals are high unless pulled low, which enables these functions. Perhaps a good idea is to start testing what is onboard to get a feel of how it behaves.
     1232: Well, again, table 5.4 shows where the LOAD button is integrated, which it is currently not.
     1250: ICs need to be inserted, then testing can commence. Can do a continuity check, if concerned.
+    1710: tested power from external board, rather than power supply works well for the existing waveform circuit. Plenty. Will continue with this passive method.
     
