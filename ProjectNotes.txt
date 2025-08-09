@@ -133,4 +133,4 @@ Ideal game ttl
     1710: tested power from external board, rather than power supply works well for the existing waveform circuit. Plenty. Will continue with this passive method.
 09.08.2025
     1104: Want to amend the task03 diagram to match the ports at-hand.
-    
+    1117: Updated the task03 image to include logic indications and not Heiserman namings.
