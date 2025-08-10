@@ -139,4 +139,5 @@ Ideal game ttl
     1815: Despite pavels and the appearance of 1978 manifestations, want to complete the CS, WE, and LOAD connections so next session can plug-n-chug.
     1842: Had to attend to something, now starting in.
     1848: The active-low circuits have 1k pullups, as the lowest available value in documentation. Can changs since in the Heiserman fashion. Continuing.
+    1923: The system is installed! :-)
     
