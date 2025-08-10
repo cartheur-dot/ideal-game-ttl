@@ -135,4 +135,6 @@ Ideal game ttl
     1104: Want to amend the task03 diagram to match the ports at-hand.
     1117: Updated the task03 image to include logic indications and not Heiserman namings.
     1119: Aded the active low circuit clarity pavel image to the repo.
+10.08.2025
+    1815: Despite pavels and the appearance of 1978 manifestations, want to complete the CS, WE, and LOAD connections so next session can plug-n-chug.
     
