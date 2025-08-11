@@ -114,7 +114,7 @@ Ideal game ttl
     1104: Work begins.
     1246: Found an error on the 8226 chip.
     1304: Next is to delve into Task 3.
-    1308: 74LS93 and 74LS85 will need to be sorted subsequent to 2114. But no LEDs to show readout! Reuse is the obvious answer, the blue datalights. Needs planning after sorting the last task- e.g., need to devise new sets of tasks.
+    1308: 74LS93 and 74LS85 will need to be sorted subsequent to 2114. But no LEDs to show readout! Reuse is the obvious answer, the blue datalights. Needs planning after sorting the last task- e.g., need to devise new sets of tasks
     1722: Will only work until the insertion of 2114 and work-backward to the necessary switch indicators for RAM direction - read-write.
 07.08.2025
     1044: Focused to get task three completed today.
@@ -144,4 +144,6 @@ Ideal game ttl
     1429: Fucking chumps wasting my time today. Fucking hell!
     1436: Start with a (dry) test of the lamps and switches.
     1440: LEDs functional but cannot check switches without ICs socketed. Time is here!
+    1452: Chips installed.
+    1455: Address lamps engaged but data not. Will look into wiring and logic analysis. Afterlife sunshine guiding me on this last preparative step.
     
