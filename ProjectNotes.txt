@@ -140,4 +140,6 @@ Ideal game ttl
     1842: Had to attend to something, now starting in.
     1848: The active-low circuits have 1k pullups, as the lowest available value in documentation. Can changs since in the Heiserman fashion. Continuing.
     1923: The system is installed! :-)
+11.08.2025
+    1429: Fucking chumps wasting my time today. Fucking hell!
     
