@@ -146,4 +146,5 @@ Ideal game ttl
     1440: LEDs functional but cannot check switches without ICs socketed. Time is here!
     1452: Chips installed.
     1455: Address lamps engaged but data not. Will look into wiring and logic analysis. Afterlife sunshine guiding me on this last preparative step.
+    1538: With the HP logic clip and Elenco logic probe, seeing results and things stored in RAM. :-)
     
