@@ -147,4 +147,6 @@ Ideal game ttl
     1452: Chips installed.
     1455: Address lamps engaged but data not. Will look into wiring and logic analysis. Afterlife sunshine guiding me on this last preparative step.
     1538: With the HP logic clip and Elenco logic probe, seeing results and things stored in RAM. :-)
+12.08.2025
+    934: Another item to attend to as a priority. Current test setup is very helpful to understanding next steps.
     
