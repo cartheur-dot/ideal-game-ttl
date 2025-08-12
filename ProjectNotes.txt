@@ -154,4 +154,5 @@ Ideal game ttl
     1030: There is an issue with A5-A3; A0-A2 when looking at the 2114 work correctly, but the next set are working incorrectly. A chip-configuration problem and not the circuit. Will need to get a deeper understanding of addressing in RAM. :-) ...in this case, of course!
     1038: It also could be that CS needs a separate activity level and not tied together.
     1053: Anything stated is speculation. Need to attend to the other matter.
+    1305: Found a solid source to set a new foundation of study and the pathway to validate it.
     
