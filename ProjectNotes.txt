@@ -149,4 +149,6 @@ Ideal game ttl
     1538: With the HP logic clip and Elenco logic probe, seeing results and things stored in RAM. :-)
 12.08.2025
     934: Another item to attend to as a priority. Current test setup is very helpful to understanding next steps.
+    950: Before that: Writing and reading RAM is working but something funny in AS4 and AS6 - they seem to be partially connected together; also some crosstalk in some addresses. However, the basic concept is functional, although inverted!
+    951: Nevertheless, the platform initial tests are a rousing success!
     
