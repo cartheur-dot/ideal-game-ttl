@@ -11,8 +11,12 @@ _Print_
 * led-indicator-four (1)
 * led-indicator-three (1)
 
-FINIS
-
-### Have this fun
+### Nibble-RAM feature
 
 [this](https://www.instructables.com/DIY-RAM-for-Your-Micro/)
+
+### Communication
+
+From the state of power-off to power-on, 2114 should be empty, but it is not.
+
+![paradigm](/images/comm-paradigms.jpg)
